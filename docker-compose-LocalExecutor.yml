@@ -13,7 +13,7 @@ services:
           - ./examples/do-this-first/dwh_tables.sql:/docker-entrypoint-initdb.d/dwh_tables.sql
           - ./examples/do-this-first/populate_tables.sql:/docker-entrypoint-initdb.d/populate_tables.sql
   webserver:
-      image: puckel/docker-airflow:1.8.0
+      image: puckel/docker-airflow:1.10.1
       restart: always
       depends_on:
           - postgres
